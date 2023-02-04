@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Inter:wght@200&family=Quicksand&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div  class="box">
+        <h2>Calculator</h2>
+        <div class="subbox">
+<form action=""method="get" name ="form">
+    <input class="textview" name="textview">
+</form>
+<table cellpadding="4" cellspacing ="9">
+<tr>
+<td><input type="button" value="%"></td>
+<td><input type="button" value="c" onclick="clean()"></td>
+<td><input type="button" value="<"></td>
+<td><input type="submit" value="/"onclick="insert('/')"></td>
+
+</tr>
+<tr>
+    <td><input type="button" value="7" onclick="insert(7)"></td>
+    <td><input type="button" value="8" onclick="insert(8)"></td>
+    <td><input type="button" value="9" onclick="insert(9)"></td>
+    <td><input type="submit" value="x"onclick="insert('*')"></td>
+    
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="insert(4)"></td>
+        <td><input type="button" value="5" onclick="insert(5)"></td>
+        <td><input type="button" value="6" onclick="insert(6)"></td>
+        <td><input type="submit" value="-"onclick="insert('-')"></td>
+        
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="insert(1)"></td>
+            <td><input type="button" value="2" onclick="insert(2)"></td>
+            <td><input type="button" value="3" onclick="insert(3)"></td>
+            <td><input type="submit" value="+"onclick="insert('+')"></td>
+            
+            </tr>
+            <tr>
+                <td><input type="button" value="+/-" onclick="insert('+/-')"></td>
+                <td><input type="button" value="0" onclick="insert(0)"></td>
+                <td><input type="button" value="." onclick="insert(.)"></td>
+                <td><input type="submit" value="="onclick="equal()"></td>
+                
+                </tr>
+    
+    
+    
+
+
+</table>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
